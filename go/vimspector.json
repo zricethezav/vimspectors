@@ -1,0 +1,25 @@
+{
+  "configurations": {
+    "default-debug": {
+      "adapter": "vscode-go",
+      "default": true,
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/main.go",
+        "mode": "debug",
+        "stopOnEntry": true,
+        "dlvToolPath": "$HOME/go/bin/dlv",
+        "trace": true,
+        "args": [""],
+        "env": { "GO111MODULE": "on" },
+        "dlvLoadConfig": {
+                "followPointers": true,
+                "maxVariableRecurse": 1,
+                "maxStringLen": 4000,
+                "maxArrayValues": 64,
+                "maxStructFields": -1
+            }
+      }
+    }
+  }
+}
